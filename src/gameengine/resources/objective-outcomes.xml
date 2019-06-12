@@ -1,0 +1,41 @@
+<objectiveOutcomes>
+
+    <objectiveOutcomeDefinition>
+        <name>ChangeAttribute</name>
+        <fields>
+            <string>title</string>
+            <string>attributeName</string>
+            <double>change</double>
+        </fields>
+    </objectiveOutcomeDefinition>
+
+    <objectiveOutcomeDefinition>
+        <name>GameOver</name>
+        <fields>
+            <string>title</string>
+        </fields>
+    </objectiveOutcomeDefinition>
+
+    <objectiveOutcomeDefinition>
+        <name>NextLevel</name>
+        <fields>
+            <string>title</string>
+        </fields>
+    </objectiveOutcomeDefinition>
+
+    <objectiveOutcomeDefinition>
+        <name>RemoveAgent</name>
+        <fields>
+            <string>title</string>
+            <string>objectiveIdentificationPropertyValue</string>
+        </fields>
+    </objectiveOutcomeDefinition>
+
+    <objectiveOutcomeDefinition>
+        <name>Win</name>
+        <fields>
+            <string>title</string>
+        </fields>
+    </objectiveOutcomeDefinition>
+
+</objectiveOutcomes>

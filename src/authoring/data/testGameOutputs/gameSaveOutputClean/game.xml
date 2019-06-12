@@ -1,0 +1,107 @@
+<state.State>
+  <levels>
+    <engine.Level>
+      <levelState>
+        <placeableAgents/>
+        <agentsCurrent/>
+        <attributesCurrent/>
+        <gameOver>false</gameOver>
+        <backgroundImageURL>C:\Users\marys\Pictures\2015-08\IMG_0246.JPG</backgroundImageURL>
+        <pcs serialization="custom">
+          <java.beans.PropertyChangeSupport>
+            <default>
+              <source class="state.LevelState" reference="../../../.."/>
+              <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+            </default>
+            <null/>
+          </java.beans.PropertyChangeSupport>
+        </pcs>
+      </levelState>
+      <eventMaster>
+        <removeAgentListeners>
+          <java.util.function.Consumer resolves-to="serialized-lambda">
+            <capturingClass>engine.Level</capturingClass>
+            <functionalInterfaceClass>java/util/function/Consumer</functionalInterfaceClass>
+            <functionalInterfaceMethodName>accept</functionalInterfaceMethodName>
+            <functionalInterfaceMethodSignature>(Ljava/lang/Object;)V</functionalInterfaceMethodSignature>
+            <implClass>engine/Level</implClass>
+            <implMethodName>lambda$injectGameEventMaster$5384b112$1</implMethodName>
+            <implMethodSignature>(Lengine/event/events/RemoveAgentEvent;)V</implMethodSignature>
+            <implMethodKind>7</implMethodKind>
+            <instantiatedMethodType>(Lengine/event/events/RemoveAgentEvent;)V</instantiatedMethodType>
+            <capturedArgs>
+              <engine.Level reference="../../../../.."/>
+            </capturedArgs>
+          </java.util.function.Consumer>
+        </removeAgentListeners>
+        <addAgentListeners>
+          <java.util.function.Consumer resolves-to="serialized-lambda">
+            <capturingClass>engine.Level</capturingClass>
+            <functionalInterfaceClass>java/util/function/Consumer</functionalInterfaceClass>
+            <functionalInterfaceMethodName>accept</functionalInterfaceMethodName>
+            <functionalInterfaceMethodSignature>(Ljava/lang/Object;)V</functionalInterfaceMethodSignature>
+            <implClass>engine/Level</implClass>
+            <implMethodName>lambda$injectGameEventMaster$5384b112$2</implMethodName>
+            <implMethodSignature>(Lengine/event/events/AddAgentEvent;)V</implMethodSignature>
+            <implMethodKind>7</implMethodKind>
+            <instantiatedMethodType>(Lengine/event/events/AddAgentEvent;)V</instantiatedMethodType>
+            <capturedArgs>
+              <engine.Level reference="../../../../.."/>
+            </capturedArgs>
+          </java.util.function.Consumer>
+        </addAgentListeners>
+      </eventMaster>
+      <agentsToAdd/>
+      <agentsToRemove/>
+      <authoringAgentsPlaced>
+        <state.AgentReference>
+          <name>Test</name>
+          <x>264.40000000000003</x>
+          <y>117.59999999999997</y>
+          <direction>0.0</direction>
+          <instanceProperties/>
+        </state.AgentReference>
+      </authoringAgentsPlaced>
+      <authoringPlaceableAgents/>
+      <masterDefinedAgents>
+        <state.agent.Agent>
+          <actionDecisions/>
+          <playerAgent>
+            <id>0</id>
+            <x>0.0</x>
+            <y>0.0</y>
+            <imageURL>C:\Users\marys\Pictures\2015-08\IMG_0248.JPG</imageURL>
+            <name>Test</name>
+            <direction>0.0</direction>
+            <width>30</width>
+            <height>30</height>
+            <properties/>
+            <pcs serialization="custom">
+              <java.beans.PropertyChangeSupport>
+                <default>
+                  <source class="state.agent.PlayerAgent" reference="../../../.."/>
+                  <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                </default>
+                <null/>
+              </java.beans.PropertyChangeSupport>
+            </pcs>
+          </playerAgent>
+          <pcs serialization="custom">
+            <java.beans.PropertyChangeSupport>
+              <default>
+                <source class="state.agent.Agent" reference="../../../.."/>
+                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              </default>
+              <null/>
+            </java.beans.PropertyChangeSupport>
+          </pcs>
+        </state.agent.Agent>
+      </masterDefinedAgents>
+      <paths/>
+    </engine.Level>
+  </levels>
+  <currentLevel>0</currentLevel>
+  <currentObjectives/>
+  <gameOver>false</gameOver>
+  <definedAgents reference="../levels/engine.Level/masterDefinedAgents"/>
+</state.State>

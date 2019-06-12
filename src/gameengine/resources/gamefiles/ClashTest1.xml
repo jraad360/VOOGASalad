@@ -1,0 +1,241 @@
+<state.State>
+  <levels>
+    <engine.Level>
+      <levelState>
+        <placeableAgents/>
+        <agentsCurrent/>
+        <attributesCurrent/>
+        <gameOver>false</gameOver>
+        <pcs serialization="custom">
+          <java.beans.PropertyChangeSupport>
+            <default>
+              <source class="state.LevelState" reference="../../../.."/>
+              <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+            </default>
+            <null/>
+          </java.beans.PropertyChangeSupport>
+        </pcs>
+      </levelState>
+      <eventMaster>
+        <removeAgentListeners>
+          <java.util.function.Consumer resolves-to="serialized-lambda">
+            <capturingClass>engine.Level</capturingClass>
+            <functionalInterfaceClass>java/util/function/Consumer</functionalInterfaceClass>
+            <functionalInterfaceMethodName>accept</functionalInterfaceMethodName>
+            <functionalInterfaceMethodSignature>(Ljava/lang/Object;)V</functionalInterfaceMethodSignature>
+            <implClass>engine/Level</implClass>
+            <implMethodName>lambda$injectGameEventMaster$5384b112$1</implMethodName>
+            <implMethodSignature>(Lengine/event/events/RemoveAgentEvent;)V</implMethodSignature>
+            <implMethodKind>7</implMethodKind>
+            <instantiatedMethodType>(Lengine/event/events/RemoveAgentEvent;)V</instantiatedMethodType>
+            <capturedArgs>
+              <engine.Level reference="../../../../.."/>
+            </capturedArgs>
+          </java.util.function.Consumer>
+        </removeAgentListeners>
+        <addAgentListeners>
+          <java.util.function.Consumer resolves-to="serialized-lambda">
+            <capturingClass>engine.Level</capturingClass>
+            <functionalInterfaceClass>java/util/function/Consumer</functionalInterfaceClass>
+            <functionalInterfaceMethodName>accept</functionalInterfaceMethodName>
+            <functionalInterfaceMethodSignature>(Ljava/lang/Object;)V</functionalInterfaceMethodSignature>
+            <implClass>engine/Level</implClass>
+            <implMethodName>lambda$injectGameEventMaster$5384b112$2</implMethodName>
+            <implMethodSignature>(Lengine/event/events/AddAgentEvent;)V</implMethodSignature>
+            <implMethodKind>7</implMethodKind>
+            <instantiatedMethodType>(Lengine/event/events/AddAgentEvent;)V</instantiatedMethodType>
+            <capturedArgs>
+              <engine.Level reference="../../../../.."/>
+            </capturedArgs>
+          </java.util.function.Consumer>
+        </addAgentListeners>
+      </eventMaster>
+      <agentsToAdd/>
+      <agentsToRemove/>
+      <authoringAgentsPlaced>
+        <state.AgentReference>
+          <name>home</name>
+          <x>300.0</x>
+          <y>300.0</y>
+          <direction>0.0</direction>
+          <instanceProperties/>
+        </state.AgentReference>
+        <state.AgentReference>
+          <name>barb</name>
+          <x>200.0</x>
+          <y>380.0</y>
+          <direction>0.0</direction>
+          <instanceProperties/>
+        </state.AgentReference>
+        <state.AgentReference>
+          <name>barb</name>
+          <x>500.0</x>
+          <y>380.0</y>
+          <direction>0.0</direction>
+          <instanceProperties/>
+        </state.AgentReference>
+        <state.AgentReference>
+          <name>barb</name>
+          <x>200.0</x>
+          <y>220.0</y>
+          <direction>0.0</direction>
+          <instanceProperties/>
+        </state.AgentReference>
+        <state.AgentReference>
+          <name>barb</name>
+          <x>500.0</x>
+          <y>220.0</y>
+          <direction>0.0</direction>
+          <instanceProperties/>
+        </state.AgentReference>
+      </authoringAgentsPlaced>
+      <authoringPlaceableAgents/>
+      <masterDefinedAgents>
+        <state.agent.Agent>
+          <actionDecisions/>
+          <playerAgent>
+            <id>0</id>
+            <x>0.0</x>
+            <y>0.0</y>
+            <imageURL>clash/TH10.png</imageURL>
+            <name>home</name>
+            <direction>1.0</direction>
+            <width>50</width>
+            <height>50</height>
+            <properties>
+              <state.Property>
+                <name>health</name>
+                <value class="double">100.0</value>
+              </state.Property>
+              <state.Property>
+                <name>team</name>
+                <value class="string">Luke</value>
+              </state.Property>
+            </properties>
+            <pcs serialization="custom">
+              <java.beans.PropertyChangeSupport>
+                <default>
+                  <source class="state.agent.PlayerAgent" reference="../../../.."/>
+                  <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                </default>
+                <null/>
+              </java.beans.PropertyChangeSupport>
+            </pcs>
+          </playerAgent>
+          <pcs serialization="custom">
+            <java.beans.PropertyChangeSupport>
+              <default>
+                <source class="state.agent.Agent" reference="../../../.."/>
+                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              </default>
+              <null/>
+            </java.beans.PropertyChangeSupport>
+          </pcs>
+        </state.agent.Agent>
+        <state.agent.Agent>
+          <actionDecisions>
+            <state.actiondecision.ActionDecision>
+              <action class="state.action.PointToAgent">
+                <eventMaster reference="../../../../../../eventMaster"/>
+                <params/>
+                <name>PointToAgent</name>
+                <baseAgent reference="../../../.."/>
+              </action>
+              <conditions>
+                <state.condition.propertyCondition.PropertyEqualToCondition>
+                  <name>PropertyEqualTo</name>
+                  <params>
+                    <entry>
+                      <string>property</string>
+                      <string>team</string>
+                    </entry>
+                    <entry>
+                      <string>value</string>
+                      <string>Luke</string>
+                    </entry>
+                  </params>
+                  <value class="string">Luke</value>
+                  <propertyName>team</propertyName>
+                </state.condition.propertyCondition.PropertyEqualToCondition>
+                <state.condition.ClosestCondition>
+                  <name>Closest</name>
+                  <params/>
+                  <baseAgent reference="../../../../.."/>
+                </state.condition.ClosestCondition>
+              </conditions>
+            </state.actiondecision.ActionDecision>
+            <state.actiondecision.ActionDecision>
+              <action class="state.action.movement.MoveAtRelativeAngle">
+                <eventMaster reference="../../../../../../eventMaster"/>
+                <params>
+                  <entry>
+                    <string>angle</string>
+                    <double>0.0</double>
+                  </entry>
+                  <entry>
+                    <string>speed</string>
+                    <double>10.0</double>
+                  </entry>
+                </params>
+                <name>MoveAtRelativeAngle</name>
+                <speed>10.0</speed>
+                <baseAgent reference="../../../.."/>
+                <angle>0.0</angle>
+              </action>
+              <conditions>
+                <state.condition.DoOnceWithSelfCondition>
+                  <name>DoOnceWithSelf</name>
+                  <params/>
+                  <baseAgent reference="../../../../.."/>
+                </state.condition.DoOnceWithSelfCondition>
+              </conditions>
+            </state.actiondecision.ActionDecision>
+          </actionDecisions>
+          <playerAgent>
+            <id>1</id>
+            <x>0.0</x>
+            <y>0.0</y>
+            <imageURL>clash/Barbarian.png</imageURL>
+            <name>barb</name>
+            <direction>0.0</direction>
+            <width>10</width>
+            <height>10</height>
+            <properties>
+              <state.Property>
+                <name>health</name>
+                <value class="double">20.0</value>
+              </state.Property>
+              <state.Property>
+                <name>team</name>
+                <value class="string">Jorge</value>
+              </state.Property>
+            </properties>
+            <pcs serialization="custom">
+              <java.beans.PropertyChangeSupport>
+                <default>
+                  <source class="state.agent.PlayerAgent" reference="../../../.."/>
+                  <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                </default>
+                <null/>
+              </java.beans.PropertyChangeSupport>
+            </pcs>
+          </playerAgent>
+          <pcs serialization="custom">
+            <java.beans.PropertyChangeSupport>
+              <default>
+                <source class="state.agent.Agent" reference="../../../.."/>
+                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              </default>
+              <null/>
+            </java.beans.PropertyChangeSupport>
+          </pcs>
+        </state.agent.Agent>
+      </masterDefinedAgents>
+      <paths/>
+    </engine.Level>
+  </levels>
+  <currentLevel>0</currentLevel>
+  <currentObjectives/>
+  <gameOver>false</gameOver>
+  <definedAgents reference="../levels/engine.Level/masterDefinedAgents"/>
+</state.State>

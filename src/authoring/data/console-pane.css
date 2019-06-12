@@ -1,0 +1,105 @@
+#message {
+    -fx-font-size: 10pt;
+    -fx-font-family: "monospace";
+    -fx-background: rgb(42, 42, 45);
+    -fx-fill: white;
+    -fx-stroke-width: 1;
+}
+
+#error_message {
+    -fx-font-size: 10pt;
+    -fx-font-family: "monospace";
+    -fx-background: rgb(42, 42, 45);
+    -fx-fill: red;
+    -fx-stroke-width: 1;
+}
+
+#success_message {
+    -fx-font-size: 10pt;
+    -fx-font-family: "monospace";
+    -fx-background: rgb(42, 42, 45);
+    -fx-fill: green;
+    -fx-stroke-width: 1;
+}
+
+#terminal_overall {
+    -fx-border-style: solid none none none;
+    -fx-border-width: 5px;
+    -fx-border-color: grey;
+}
+
+#terminal_heading {
+    -fx-font-size: 14pt;
+    -fx-fill: grey;
+    -fx-font-family: "monospace";
+}
+
+.button {
+    -fx-text-fill: rgb(0, 0, 0);
+    -fx-background-color: rgb(255, 179, 179);
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 5;
+}
+
+.button:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+.combo-box-base {
+    -fx-text-fill: rgb(0, 0, 0);
+    -fx-background-color: rgb(255, 179, 179);
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+.combo-box-base:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+#img {
+    -fx-border-radius: 4px;
+    -fx-padding: 5px;
+    -fx-width: 150px;
+    -fx-background-color: transparent;
+}
+
+#img:hover {
+    -fx-opacity: 0.3;
+}
+
+.label {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Georgia";
+    -fx-font-weight: bold;
+    -fx-text-fill: rgb(0, 51, 102);
+    -fx-opacity: 0.6;
+}
+
+.scroll-pane {
+    -fx-background: #424242;
+}
+
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: gray;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: darkgrey;
+}
+
+.increment-button:hover {
+    -fx-background-color: darkgrey;
+}
+
+.decrement-button:hover {
+    -fx-background-color: darkgrey;
+}
+
+.text-field {
+    -fx-font-size: 18pt;
+    -fx-font-family: "Segoe UI Semibold";
+}

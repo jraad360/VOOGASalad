@@ -1,0 +1,55 @@
+<predefinedAgents>
+    <agent>
+        <name>Melee</name>
+        <actionDecisions>
+
+            <!-- Point to target -->
+            <actionDecision>
+                <action>
+                    <PointToAgent />
+                </action>
+                <conditions>
+                    <Enemy />
+                    <Closest />
+                </conditions>
+            </actionDecision>
+
+            <!-- Move to target -->
+            <actionDecision>
+                <action>
+                    <MoveStraightToAgent>
+                        <speed>5</speed>
+                    </MoveStraightToAgent>
+                </action>
+                <conditions>
+                    <Enemy />
+                    <Closest />
+                </conditions>
+            </actionDecision>
+
+            <!-- Attack target -->
+            <actionDecision>
+                <action>
+                    <ApplyAgentOperation>
+                        <agentOperation>
+                            <Damage>
+                                <healthPoints>10</healthPoints>
+                            </Damage>
+                        </agentOperation>
+                    </ApplyAgentOperation>
+                </action>
+                <conditions>
+                    <Interval>
+                        <interval>10</interval>
+                    </Interval>
+                    <Range>
+                        <range>5</range>
+                    </Range>
+                    <Enemy />
+                    <Closest />
+                </conditions>
+            </actionDecision>
+
+        </actionDecisions>
+    </agent>
+</predefinedAgents>

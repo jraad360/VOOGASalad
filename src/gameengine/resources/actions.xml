@@ -1,0 +1,89 @@
+<actions>
+
+    <actionDefinition>
+        <name>MoveAtRelativeAngle</name>
+        <fields>
+            <double>angle</double>
+            <double>speed</double>
+        </fields>
+    </actionDefinition>
+
+    <actionDefinition>
+        <name>MoveStraightToAgent</name>
+        <fields>
+            <double>speed</double>
+        </fields>
+    </actionDefinition>
+
+    <actionDefinition>
+        <name>PointToAgent</name>
+        <fields />
+    </actionDefinition>
+
+    <actionDefinition>
+        <name>MoveOnPointPath</name>
+        <fields>
+            <string>pathName</string>
+            <double>speed</double>
+        </fields>
+    </actionDefinition>
+
+    <actionDefinition>
+        <name>MoveToAgentPRM</name>
+        <fields>
+            <double>speed</double>
+        </fields>
+    </actionDefinition>
+
+    <actionDefinition>
+        <name>Spin</name>
+        <fields>
+            <double>angularSpeed</double>
+        </fields>
+    </actionDefinition>
+
+    <actionDefinition>
+        <name>DestroyAgent</name>
+        <fields>
+        </fields>
+    </actionDefinition>
+
+    <actionDefinition>
+        <name>IncrementProperty</name>
+        <fields>
+            <string>property</string>
+            <double>value</double>
+        </fields>
+    </actionDefinition>
+
+    <actionDefinition>
+        <name>DecrementProperty</name>
+        <fields>
+            <string>property</string>
+            <double>value</double>
+        </fields>
+    </actionDefinition>
+
+    <actionDefinition>
+        <name>SetProperty</name>
+        <fields>
+            <string>property</string>
+            <double>value</double>
+        </fields>
+    </actionDefinition>
+
+    <actionDefinition>
+        <name>SpawnAgentInitialDirection</name>
+        <fields>
+            <string>agent</string>
+        </fields>
+    </actionDefinition>
+
+    <actionDefinition>
+        <name>SpawnAgentInjectProperties</name>
+        <fields>
+            <string>agent</string>
+            <propertyList>properties</propertyList>
+        </fields>
+    </actionDefinition>
+</actions>

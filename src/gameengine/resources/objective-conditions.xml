@@ -1,0 +1,109 @@
+<objectiveConditions>
+
+    <objectiveConditionDefinition>
+        <name>AgentExistence</name>
+        <fields>
+            <string>title</string>
+            <int>level</int>
+            <int>targetNumber</int>
+            <string>targetPropertyName</string>
+        </fields>
+    </objectiveConditionDefinition>
+
+    <objectiveConditionDefinition>
+        <name>AgentPropertyEqualToValue</name>
+        <fields>
+            <string>title</string>
+            <int>level</int>
+            <string>targetPropertyName</string>
+            <T>targetPropertyValue</T>
+            <string>agentIdentifierProperty</string>
+        </fields>
+    </objectiveConditionDefinition>
+
+    <objectiveConditionDefinition>
+        <name>AgentPropertyGreaterThanOrEqualToValue</name>
+        <fields>
+            <string>title</string>
+            <int>level</int>
+            <string>targetPropertyName</string>
+            <T>targetPropertyValue</T>
+            <string>agentIdentifierProperty</string>
+        </fields>
+    </objectiveConditionDefinition>
+
+    <objectiveConditionDefinition>
+        <name>AgentPropertyLessThanOrEqualToValue</name>
+        <fields>
+            <string>title</string>
+            <int>level</int>
+            <string>targetPropertyName</string>
+            <T>targetPropertyValue</T>
+            <string>agentIdentifierProperty</string>
+        </fields>
+    </objectiveConditionDefinition>
+
+    <objectiveConditionDefinition>
+        <name>AgentVariableEqualToValue</name>
+        <fields>
+            <string>title</string>
+            <int>level</int>
+            <string>variableName</string>
+            <double>targetValue</double>
+            <string>agentIdentifierProperty</string>
+        </fields>
+    </objectiveConditionDefinition>
+
+    <objectiveConditionDefinition>
+        <name>AgentVariableGreaterThanOrEqualToValue</name>
+        <fields>
+            <string>title</string>
+            <int>level</int>
+            <string>variableName</string>
+            <double>targetValue</double>
+            <string>agentIdentifierProperty</string>
+        </fields>
+    </objectiveConditionDefinition>
+
+    <objectiveConditionDefinition>
+        <name>AgentVariableLessThanOrEqualToValue</name>
+        <fields>
+            <string>title</string>
+            <int>level</int>
+            <string>variableName</string>
+            <double>targetValue</double>
+            <string>agentIdentifierProperty</string>
+        </fields>
+    </objectiveConditionDefinition>
+
+    <objectiveConditionDefinition>
+        <name>AttributeEqualToValue</name>
+        <fields>
+            <string>title</string>
+            <int>level</int>
+            <string>attributeName</string>
+            <double>targetValue</double>
+        </fields>
+    </objectiveConditionDefinition>
+
+    <objectiveConditionDefinition>
+        <name>AttributeGreaterThanOrEqualToValue</name>
+        <fields>
+            <string>title</string>
+            <int>level</int>
+            <string>attributeName</string>
+            <double>targetValue</double>
+        </fields>
+    </objectiveConditionDefinition>
+
+    <objectiveConditionDefinition>
+        <name>AttributeLessThanOrEqualToValue</name>
+        <fields>
+            <string>title</string>
+            <int>level</int>
+            <string>attributeName</string>
+            <double>targetValue</double>
+        </fields>
+    </objectiveConditionDefinition>
+
+</objectiveConditions>

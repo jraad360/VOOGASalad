@@ -1,0 +1,135 @@
+<state.State>
+  <levels>
+    <engine.Level>
+      <levelState>
+        <agentsOptions/>
+        <agentsCurrent>
+          <state.agent.Agent>
+            <actionDecisions>
+              <state.actiondecision.ActionDecision>
+                <action class="state.action.movement.MoveAtRelativeAngle">
+                  <eventMaster>
+                    <removeAgentListeners>
+                      <null/>
+                    </removeAgentListeners>
+                    <addAgentListeners>
+                      <null/>
+                    </addAgentListeners>
+                  </eventMaster>
+                  <params>
+                    <entry>
+                      <string>angle</string>
+                      <double>0.0</double>
+                    </entry>
+                    <entry>
+                      <string>speed</string>
+                      <int>20</int>
+                    </entry>
+                  </params>
+                  <name>MoveAtRelativeAngle</name>
+                  <speed>20</speed>
+                  <baseAgent reference="../../../.."/>
+                  <angle>0.0</angle>
+                </action>
+                <conditions/>
+              </state.actiondecision.ActionDecision>
+            </actionDecisions>
+            <playerAgent>
+              <id>0</id>
+              <x>500.0</x>
+              <y>500.0</y>
+              <imageURL>zombie.gif</imageURL>
+              <name>projectile</name>
+              <direction>0.0</direction>
+              <width>10</width>
+              <height>10</height>
+              <pcs serialization="custom">
+                <java.beans.PropertyChangeSupport>
+                  <default>
+                    <source class="state.agent.PlayerAgent" reference="../../../.."/>
+                    <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                  </default>
+                  <null/>
+                </java.beans.PropertyChangeSupport>
+              </pcs>
+            </playerAgent>
+          </state.agent.Agent>
+          <state.agent.Agent>
+            <actionDecisions>
+              <state.actiondecision.ActionDecision>
+                <action class="state.action.Spin">
+                  <eventMaster reference="../../../../../state.agent.Agent/actionDecisions/state.actiondecision.ActionDecision/action/eventMaster"/>
+                  <params>
+                    <entry>
+                      <string>angularSpeed</string>
+                      <double>90.0</double>
+                    </entry>
+                  </params>
+                  <name>Spin</name>
+                  <baseAgent reference="../../../.."/>
+                  <angularSpeed>90.0</angularSpeed>
+                </action>
+                <conditions>
+                  <state.condition.DoOnceWithSelfCondition>
+                    <name>DoOnce</name>
+                    <params/>
+                  </state.condition.DoOnceWithSelfCondition>
+                </conditions>
+              </state.actiondecision.ActionDecision>
+              <state.actiondecision.ActionDecision>
+                <action class="state.action.spawn.SpawnAgentInitialDirection">
+                  <eventMaster reference="../../../../../state.agent.Agent/actionDecisions/state.actiondecision.ActionDecision/action/eventMaster"/>
+                  <params>
+                    <entry>
+                      <string>agent</string>
+                      <state.agent.Agent reference="../../../../../../../state.agent.Agent"/>
+                    </entry>
+                  </params>
+                  <name>SpawnAgentInitialDirection</name>
+                  <spawnAgent reference="../../../../../state.agent.Agent"/>
+                  <baseAgent reference="../../../.."/>
+                </action>
+                <conditions>
+                  <state.condition.IntervalCondition>
+                    <name>Interval</name>
+                    <params>
+                      <entry>
+                        <string>interval</string>
+                        <double>1.0</double>
+                      </entry>
+                    </params>
+                    <intervalMillis>1000.0</intervalMillis>
+                    <lastOccurrence>0</lastOccurrence>
+                  </state.condition.IntervalCondition>
+                </conditions>
+              </state.actiondecision.ActionDecision>
+            </actionDecisions>
+            <playerAgent>
+              <id>1</id>
+              <x>500.0</x>
+              <y>500.0</y>
+              <imageURL>zombie.gif</imageURL>
+              <name>tower</name>
+              <direction>0.0</direction>
+              <width>10</width>
+              <height>10</height>
+              <pcs serialization="custom">
+                <java.beans.PropertyChangeSupport>
+                  <default>
+                    <source class="state.agent.PlayerAgent" reference="../../../.."/>
+                    <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                  </default>
+                  <null/>
+                </java.beans.PropertyChangeSupport>
+              </pcs>
+            </playerAgent>
+          </state.agent.Agent>
+        </agentsCurrent>
+        <objectivesCurrent/>
+        <attributesCurrent/>
+      </levelState>
+      <eventMaster reference="../levelState/agentsCurrent/state.agent.Agent/actionDecisions/state.actiondecision.ActionDecision/action/eventMaster"/>
+    </engine.Level>
+  </levels>
+  <currentLevel>0</currentLevel>
+</state.State>

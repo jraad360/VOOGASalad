@@ -1,0 +1,72 @@
+.menu-bar {
+    -fx-background-color: #424242;
+}
+
+#textTest{
+    -fx-font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    -fx-font-size: 10pt;
+    -fx-font-weight: lighter;
+    -fx-text-fill: white;
+}
+
+.label {
+    -fx-font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    -fx-font-size: 10pt;
+    -fx-font-weight: lighter;
+    -fx-text-fill: white;
+    -fx-padding: 1 5 1 5;
+}
+
+#paddedLabel{
+    -fx-padding: 15 5 15 5;
+}
+
+.choice-box .context-menu {
+    -fx-background-color: #424242;
+}
+
+.choice-box .menu-item:focused {
+    -fx-background-color: #7E8889;
+}
+
+.choice-box .menu-item > .label {
+    -fx-text-fill: white;
+}
+
+.choice-box {
+    -fx-background-color: #424242;
+    -fx-mark-color: #7E8889;
+}
+
+.choice-box > .label {
+    -fx-text-fill: white;
+}
+
+.accordion {
+    -fx-background-color: #424242;
+    -fx-font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    -fx-font-size: 10pt;
+    -fx-font-weight: lighter;
+    -fx-text-fill: white;
+}
+
+.titled-pane{
+    -fx-background-color: #424242;
+    -fx-font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    -fx-font-size: 10pt;
+    -fx-font-weight: lighter;
+    -fx-text-fill: white;
+}
+
+.text-field {
+    -fx-background-color: #424242;
+    -fx-font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    -fx-font-size: 10pt;
+    -fx-font-weight: lighter;
+    -fx-text-fill: white;
+    -fx-pref-width: 100px;
+}
+
+.text-field:focused {
+    -fx-background-color: grey;
+}

@@ -1,0 +1,21 @@
+#pane{
+    -fx-background-image: url('bg.png');
+    -fx-background-repeat: stretch;
+}
+
+.star {
+    -fx-graphic: url('star.png');
+}
+
+.text {
+    -fx-font-size: 20;
+    -fx-text-origin: top;
+
+}
+
+
+
+.butt {
+    -fx-background-color: #6ECED6;
+
+}

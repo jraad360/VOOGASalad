@@ -1,0 +1,10 @@
+<fieldDefinitions>
+
+    <field>int</field>
+    <field>double</field>
+    <field>string</field>
+    <field>boolean</field>
+    <field>comparable</field>
+    <field>propertyList</field>
+
+</fieldDefinitions>

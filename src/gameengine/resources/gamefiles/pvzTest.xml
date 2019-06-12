@@ -1,0 +1,510 @@
+<state.State>
+  <levels>
+    <engine.Level>
+      <levelState>
+        <placeableAgents/>
+        <agentsCurrent/>
+        <attributesCurrent/>
+        <pcs serialization="custom">
+          <java.beans.PropertyChangeSupport>
+            <default>
+              <source class="state.LevelState" reference="../../../.."/>
+              <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+            </default>
+            <null/>
+          </java.beans.PropertyChangeSupport>
+        </pcs>
+      </levelState>
+      <eventMaster>
+        <removeAgentListeners>
+          <java.util.function.Consumer resolves-to="serialized-lambda">
+            <capturingClass>engine.Level</capturingClass>
+            <functionalInterfaceClass>java/util/function/Consumer</functionalInterfaceClass>
+            <functionalInterfaceMethodName>accept</functionalInterfaceMethodName>
+            <functionalInterfaceMethodSignature>(Ljava/lang/Object;)V</functionalInterfaceMethodSignature>
+            <implClass>engine/Level</implClass>
+            <implMethodName>lambda$injectGameEventMaster$5384b112$1</implMethodName>
+            <implMethodSignature>(Lengine/event/events/RemoveAgentEvent;)V</implMethodSignature>
+            <implMethodKind>7</implMethodKind>
+            <instantiatedMethodType>(Lengine/event/events/RemoveAgentEvent;)V</instantiatedMethodType>
+            <capturedArgs>
+              <engine.Level reference="../../../../.."/>
+            </capturedArgs>
+          </java.util.function.Consumer>
+        </removeAgentListeners>
+        <addAgentListeners>
+          <java.util.function.Consumer resolves-to="serialized-lambda">
+            <capturingClass>engine.Level</capturingClass>
+            <functionalInterfaceClass>java/util/function/Consumer</functionalInterfaceClass>
+            <functionalInterfaceMethodName>accept</functionalInterfaceMethodName>
+            <functionalInterfaceMethodSignature>(Ljava/lang/Object;)V</functionalInterfaceMethodSignature>
+            <implClass>engine/Level</implClass>
+            <implMethodName>lambda$injectGameEventMaster$5384b112$2</implMethodName>
+            <implMethodSignature>(Lengine/event/events/AddAgentEvent;)V</implMethodSignature>
+            <implMethodKind>7</implMethodKind>
+            <instantiatedMethodType>(Lengine/event/events/AddAgentEvent;)V</instantiatedMethodType>
+            <capturedArgs>
+              <engine.Level reference="../../../../.."/>
+            </capturedArgs>
+          </java.util.function.Consumer>
+        </addAgentListeners>
+      </eventMaster>
+      <agentsToAdd/>
+      <agentsToRemove/>
+      <authoringAgentsPlaced>
+        <state.AgentReference>
+          <name>peashooter</name>
+          <x>50.0</x>
+          <y>50.0</y>
+          <direction>0.0</direction>
+          <instanceProperties/>
+        </state.AgentReference>
+        <state.AgentReference>
+          <name>peashooter</name>
+          <x>50.0</x>
+          <y>150.0</y>
+          <direction>0.0</direction>
+          <instanceProperties/>
+        </state.AgentReference>
+        <state.AgentReference>
+          <name>peashooter</name>
+          <x>50.0</x>
+          <y>250.0</y>
+          <direction>0.0</direction>
+          <instanceProperties/>
+        </state.AgentReference>
+        <state.AgentReference>
+          <name>peashooter</name>
+          <x>50.0</x>
+          <y>350.0</y>
+          <direction>0.0</direction>
+          <instanceProperties/>
+        </state.AgentReference>
+        <state.AgentReference>
+          <name>peashooter</name>
+          <x>50.0</x>
+          <y>450.0</y>
+          <direction>0.0</direction>
+          <instanceProperties/>
+        </state.AgentReference>
+        <state.AgentReference>
+          <name>zombie</name>
+          <x>350.0</x>
+          <y>50.0</y>
+          <direction>180.0</direction>
+          <instanceProperties/>
+        </state.AgentReference>
+        <state.AgentReference>
+          <name>zombie</name>
+          <x>350.0</x>
+          <y>150.0</y>
+          <direction>180.0</direction>
+          <instanceProperties/>
+        </state.AgentReference>
+        <state.AgentReference>
+          <name>zombie</name>
+          <x>350.0</x>
+          <y>250.0</y>
+          <direction>180.0</direction>
+          <instanceProperties/>
+        </state.AgentReference>
+        <state.AgentReference>
+          <name>zombie</name>
+          <x>350.0</x>
+          <y>350.0</y>
+          <direction>180.0</direction>
+          <instanceProperties/>
+        </state.AgentReference>
+        <state.AgentReference>
+          <name>zombie</name>
+          <x>350.0</x>
+          <y>450.0</y>
+          <direction>180.0</direction>
+          <instanceProperties/>
+        </state.AgentReference>
+      </authoringAgentsPlaced>
+      <authoringPlaceableAgents/>
+      <masterDefinedAgents>
+        <state.agent.Agent>
+          <actionDecisions>
+            <state.actiondecision.ActionDecision>
+              <action class="state.action.movement.MoveAtRelativeAngle">
+                <eventMaster reference="../../../../../../eventMaster"/>
+                <params>
+                  <entry>
+                    <string>angle</string>
+                    <double>0.0</double>
+                  </entry>
+                  <entry>
+                    <string>speed</string>
+                    <double>1000.0</double>
+                  </entry>
+                </params>
+                <name>MoveAtRelativeAngle</name>
+                <speed>1000.0</speed>
+                <baseAgent reference="../../../.."/>
+                <angle>0.0</angle>
+              </action>
+              <conditions>
+                <state.condition.DoOnceWithSelfCondition>
+                  <name>DoOnceWithSelf</name>
+                  <params/>
+                  <baseAgent reference="../../../../.."/>
+                </state.condition.DoOnceWithSelfCondition>
+              </conditions>
+            </state.actiondecision.ActionDecision>
+            <state.actiondecision.ActionDecision>
+              <action class="state.action.destroy.DestroyAgent">
+                <eventMaster reference="../../../../../../eventMaster"/>
+                <params/>
+                <name>DestroyAgent</name>
+                <baseAgent reference="../../../.."/>
+              </action>
+              <conditions>
+                <state.condition.CollisionCondition>
+                  <name>Collision</name>
+                  <params/>
+                  <baseAgent reference="../../../../.."/>
+                </state.condition.CollisionCondition>
+                <state.condition.propertyCondition.PropertyEqualToCondition>
+                  <name>PropertyEqualTo</name>
+                  <params>
+                    <entry>
+                      <string>property</string>
+                      <string>team</string>
+                    </entry>
+                    <entry>
+                      <string>value</string>
+                      <string>badGuys</string>
+                    </entry>
+                  </params>
+                  <value class="string">badGuys</value>
+                  <propertyName>team</propertyName>
+                </state.condition.propertyCondition.PropertyEqualToCondition>
+              </conditions>
+            </state.actiondecision.ActionDecision>
+            <state.actiondecision.ActionDecision>
+              <action class="state.action.property.DecrementProperty">
+                <eventMaster reference="../../../../../../eventMaster"/>
+                <params>
+                  <entry>
+                    <string>property</string>
+                    <string>health</string>
+                  </entry>
+                  <entry>
+                    <string>value</string>
+                    <double>1.0</double>
+                  </entry>
+                </params>
+                <name>DecrementProperty</name>
+                <baseAgent reference="../../../.."/>
+                <propertyName>health</propertyName>
+                <amount>1.0</amount>
+              </action>
+              <conditions reference="../../state.actiondecision.ActionDecision[2]/conditions"/>
+            </state.actiondecision.ActionDecision>
+          </actionDecisions>
+          <playerAgent>
+            <id>0</id>
+            <x>500.0</x>
+            <y>500.0</y>
+            <imageURL>pvz/pea.gif</imageURL>
+            <name>pea</name>
+            <direction>0.0</direction>
+            <width>6</width>
+            <height>6</height>
+            <properties>
+              <state.Property>
+                <name>team</name>
+                <value class="string">goodGuys</value>
+              </state.Property>
+            </properties>
+            <pcs serialization="custom">
+              <java.beans.PropertyChangeSupport>
+                <default>
+                  <source class="state.agent.PlayerAgent" reference="../../../.."/>
+                  <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                </default>
+                <null/>
+              </java.beans.PropertyChangeSupport>
+            </pcs>
+          </playerAgent>
+          <pcs serialization="custom">
+            <java.beans.PropertyChangeSupport>
+              <default>
+                <source class="state.agent.Agent" reference="../../../.."/>
+                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              </default>
+              <null/>
+            </java.beans.PropertyChangeSupport>
+          </pcs>
+        </state.agent.Agent>
+        <state.agent.Agent>
+          <actionDecisions>
+            <state.actiondecision.ActionDecision>
+              <action class="state.action.spawn.SpawnAgentInitialDirection">
+                <eventMaster reference="../../../../../../eventMaster"/>
+                <params>
+                  <entry>
+                    <string>agent</string>
+                    <string>pea</string>
+                  </entry>
+                </params>
+                <name>SpawnAgentInitialDirection</name>
+                <spawnAgentName>pea</spawnAgentName>
+                <baseAgent reference="../../../.."/>
+              </action>
+              <conditions>
+                <state.condition.DoOnceWithSelfCondition>
+                  <name>DoOnceWithSelf</name>
+                  <params>
+                    <entry>
+                      <string>interval</string>
+                      <double>5.0</double>
+                    </entry>
+                  </params>
+                  <baseAgent reference="../../../../.."/>
+                </state.condition.DoOnceWithSelfCondition>
+                <state.condition.IntervalCondition>
+                  <name>Interval</name>
+                  <params reference="../../state.condition.DoOnceWithSelfCondition/params"/>
+                  <intervalMillis>5000.0</intervalMillis>
+                  <lastOccurrence>0</lastOccurrence>
+                </state.condition.IntervalCondition>
+              </conditions>
+            </state.actiondecision.ActionDecision>
+            <state.actiondecision.ActionDecision>
+              <action class="state.action.destroy.DestroyAgent">
+                <eventMaster reference="../../../../../../eventMaster"/>
+                <params/>
+                <name>DestroyAgent</name>
+                <baseAgent reference="../../../.."/>
+              </action>
+              <conditions>
+                <state.condition.DoOnceWithSelfCondition>
+                  <name>DoOnceWithSelf</name>
+                  <params/>
+                  <baseAgent reference="../../../../.."/>
+                </state.condition.DoOnceWithSelfCondition>
+                <state.condition.propertyCondition.PropertyLessThanOrEqualToCondition>
+                  <name>PropertyLessThanOrEqualTo</name>
+                  <params>
+                    <entry>
+                      <string>property</string>
+                      <string>health</string>
+                    </entry>
+                    <entry>
+                      <string>value</string>
+                      <double>0.0</double>
+                    </entry>
+                  </params>
+                  <value class="double">0.0</value>
+                  <propertyName>health</propertyName>
+                </state.condition.propertyCondition.PropertyLessThanOrEqualToCondition>
+              </conditions>
+            </state.actiondecision.ActionDecision>
+          </actionDecisions>
+          <playerAgent>
+            <id>1</id>
+            <x>50.0</x>
+            <y>50.0</y>
+            <imageURL>pvz/peashooter.gif</imageURL>
+            <name>peashooter</name>
+            <direction>0.0</direction>
+            <width>20</width>
+            <height>20</height>
+            <properties>
+              <state.Property>
+                <name>team</name>
+                <value class="string">goodGuys</value>
+              </state.Property>
+              <state.Property>
+                <name>health</name>
+                <value class="double">20.0</value>
+              </state.Property>
+            </properties>
+            <pcs serialization="custom">
+              <java.beans.PropertyChangeSupport>
+                <default>
+                  <source class="state.agent.PlayerAgent" reference="../../../.."/>
+                  <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                </default>
+                <null/>
+              </java.beans.PropertyChangeSupport>
+            </pcs>
+          </playerAgent>
+          <pcs serialization="custom">
+            <java.beans.PropertyChangeSupport>
+              <default>
+                <source class="state.agent.Agent" reference="../../../.."/>
+                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              </default>
+              <null/>
+            </java.beans.PropertyChangeSupport>
+          </pcs>
+        </state.agent.Agent>
+        <state.agent.Agent>
+          <actionDecisions>
+            <state.actiondecision.ActionDecision>
+              <action class="state.action.destroy.DestroyAgent">
+                <eventMaster reference="../../../../../../eventMaster"/>
+                <params/>
+                <name>DestroyAgent</name>
+                <baseAgent reference="../../../.."/>
+              </action>
+              <conditions>
+                <state.condition.propertyCondition.PropertyLessThanOrEqualToCondition>
+                  <name>PropertyLessThanOrEqualTo</name>
+                  <params>
+                    <entry>
+                      <string>property</string>
+                      <string>health</string>
+                    </entry>
+                    <entry>
+                      <string>value</string>
+                      <double>0.0</double>
+                    </entry>
+                  </params>
+                  <value class="double">0.0</value>
+                  <propertyName>health</propertyName>
+                </state.condition.propertyCondition.PropertyLessThanOrEqualToCondition>
+              </conditions>
+            </state.actiondecision.ActionDecision>
+            <state.actiondecision.ActionDecision>
+              <action class="state.action.property.DecrementProperty">
+                <eventMaster reference="../../../../../../eventMaster"/>
+                <params>
+                  <entry>
+                    <string>property</string>
+                    <string>health</string>
+                  </entry>
+                  <entry>
+                    <string>value</string>
+                    <double>1.0</double>
+                  </entry>
+                </params>
+                <name>DecrementProperty</name>
+                <baseAgent reference="../../../.."/>
+                <propertyName>health</propertyName>
+                <amount>1.0</amount>
+              </action>
+              <conditions>
+                <state.condition.CollisionCondition>
+                  <name>Collision</name>
+                  <params/>
+                  <baseAgent reference="../../../../.."/>
+                </state.condition.CollisionCondition>
+                <state.condition.propertyCondition.PropertyEqualToCondition>
+                  <name>PropertyEqualTo</name>
+                  <params>
+                    <entry>
+                      <string>property</string>
+                      <string>team</string>
+                    </entry>
+                    <entry>
+                      <string>value</string>
+                      <string>goodGuys</string>
+                    </entry>
+                  </params>
+                  <value class="string">goodGuys</value>
+                  <propertyName>team</propertyName>
+                </state.condition.propertyCondition.PropertyEqualToCondition>
+                <state.condition.IntervalCondition>
+                  <name>Interval</name>
+                  <params>
+                    <entry>
+                      <string>interval</string>
+                      <double>2.0</double>
+                    </entry>
+                  </params>
+                  <intervalMillis>2000.0</intervalMillis>
+                  <lastOccurrence>0</lastOccurrence>
+                </state.condition.IntervalCondition>
+              </conditions>
+            </state.actiondecision.ActionDecision>
+            <state.actiondecision.ActionDecision>
+              <action class="state.action.movement.MoveAtRelativeAngle">
+                <eventMaster reference="../../../../../../eventMaster"/>
+                <params>
+                  <entry>
+                    <string>angle</string>
+                    <double>0.0</double>
+                  </entry>
+                  <entry>
+                    <string>speed</string>
+                    <double>10.0</double>
+                  </entry>
+                </params>
+                <name>MoveAtRelativeAngle</name>
+                <speed>10.0</speed>
+                <baseAgent reference="../../../.."/>
+                <angle>0.0</angle>
+              </action>
+              <conditions>
+                <state.condition.propertyCondition.PropertyEqualToCondition>
+                  <name>PropertyEqualTo</name>
+                  <params reference="../../../../state.actiondecision.ActionDecision[2]/conditions/state.condition.propertyCondition.PropertyEqualToCondition/params"/>
+                  <value class="string">goodGuys</value>
+                  <propertyName>team</propertyName>
+                </state.condition.propertyCondition.PropertyEqualToCondition>
+                <state.condition.IsNotCollidingCondition>
+                  <name>IsNotColliding</name>
+                  <params/>
+                  <baseAgent reference="../../../../.."/>
+                </state.condition.IsNotCollidingCondition>
+                <state.condition.DoOnceWithSelfCondition>
+                  <name>DoOnceWithSelf</name>
+                  <params/>
+                  <baseAgent reference="../../../../.."/>
+                </state.condition.DoOnceWithSelfCondition>
+              </conditions>
+            </state.actiondecision.ActionDecision>
+          </actionDecisions>
+          <playerAgent>
+            <id>2</id>
+            <x>0.0</x>
+            <y>0.0</y>
+            <imageURL>pvz/zombie.gif</imageURL>
+            <name>zombie</name>
+            <direction>180.0</direction>
+            <width>30</width>
+            <height>30</height>
+            <properties>
+              <state.Property>
+                <name>health</name>
+                <value class="double">10.0</value>
+              </state.Property>
+              <state.Property>
+                <name>team</name>
+                <value class="string">badGuys</value>
+              </state.Property>
+            </properties>
+            <pcs serialization="custom">
+              <java.beans.PropertyChangeSupport>
+                <default>
+                  <source class="state.agent.PlayerAgent" reference="../../../.."/>
+                  <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                </default>
+                <null/>
+              </java.beans.PropertyChangeSupport>
+            </pcs>
+          </playerAgent>
+          <pcs serialization="custom">
+            <java.beans.PropertyChangeSupport>
+              <default>
+                <source class="state.agent.Agent" reference="../../../.."/>
+                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              </default>
+              <null/>
+            </java.beans.PropertyChangeSupport>
+          </pcs>
+        </state.agent.Agent>
+      </masterDefinedAgents>
+      <paths/>
+    </engine.Level>
+  </levels>
+  <currentLevel>0</currentLevel>
+  <currentObjectives/>
+  <gameOver>false</gameOver>
+  <definedAgents reference="../levels/engine.Level/masterDefinedAgents"/>
+</state.State>

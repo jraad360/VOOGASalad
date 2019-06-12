@@ -1,0 +1,15 @@
+#title{
+    -fx-font-size: 14pt;
+    -fx-fill: grey;
+    -fx-font-family: "monospace";
+}
+
+#entry{
+
+}
+
+#general{
+    -fx-border-style: solid none none none;
+    -fx-border-width: 5px;
+    -fx-border-color: grey;
+}
