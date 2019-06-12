@@ -1,0 +1,6 @@
+{
+  "class" : "GameState.Rules.LivesRule"
+  "objectiveTitle" : "Enemies try to remove lives from the player"
+  "objectiveType" "PRIMARY"
+  ...
+}

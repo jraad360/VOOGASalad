@@ -1,0 +1,24 @@
+# Design Decisions Made
+* Basic structure
+    * StackPane containing a BorderPane and a Pane stacked on top of each other
+* Deliverables (by 4/9)
+    * Basic pane layout
+        * Top content: Toolbar (file, edit, etc), icon bar underneath - Mary Stuart
+            * Possible actions for toolbar: File save, load, exit environment, help, undo (?)
+            * Icon bar actions: Select tools, save button, grid snapping (?), add agent (?)
+        * Left content: Attributes editing (dynamic) - Eric
+            * Fills with text fields for state object
+            * User editable
+            * Dynamically fills
+        * Right content: Agent Panel (Static-ish) - Samuel
+            * "Add" button for adding new agent
+            * ImageView rep of Agent
+            * Possibly use FlowPane
+            * List of Agents
+        * Bottom content: Console - Mary Stuart
+            * Display actions/errors in text to the user
+    * Communication with game engine
+        * What is a state??
+        * How to represent states
+        * How to save/load state
+    

@@ -1,0 +1,7 @@
+<Request class='Request'>
+    <Method>placeAgent</Method>
+    <Payload class='GameState.Agents.Towers.SampleTower'>
+        <x>1</x>
+        <y>200</y>
+    </Payload>
+</Request>

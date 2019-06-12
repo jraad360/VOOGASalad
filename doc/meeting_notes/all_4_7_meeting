@@ -1,0 +1,41 @@
+# Updates from Game Engine
+## Communication with Author
+* Start by using "built in" agents with predefined action decisions for basic
+* Next goal: give the option of selecting custom action decisions for custom agents
+* Samuel's "Add Agent" idea:
+    * Author needs a list of attributes from engine to display for editing (I.e. Agent type [drop down], movable, speed, etc.)
+    * From the Game Engine, Author needs to know if the attribute is text, number [unbounded], min/max number [a range of numbers], or chosen from a list
+* Idea for how to get this info from Game Engine: Use XML file
+    * Engine builds XML file, it defines the attributes needed and the 
+
+## Communication with Player
+Passed in a State. This is read and used to update display, but essential parts of it aren't modified by Player.
+
+# Modifiable Fields
+## Attributes
+* Examples: lives, money, etc.
+* 
+## Player do
+* Load game
+* Restart (level or game)
+* Save game
+* Pause menu
+* Main menu
+
+## Agents
+* Visual properties
+    * Attacking animation
+    * Projectiles (also an Agent, generated on action from, for example, a tower), image should be customizable
+* Tower levels up
+
+# Author Ideas
+## DraggableImage
+* Build subclasses of DraggableImage with predefined "onMousePressed" actions
+* Types of subclasses
+    * CloneAndDragImage
+    
+Want it so you click an Agent default, it clones this image and adds the clone to the handle pane, and only the clone moves
+
+# Important Simplifications/Assumptions
+* Ex. Must define a Projectile before building a ProjectileTower
+    * More generally, must build the basic Agents before building interactive, more complicated Agents 
