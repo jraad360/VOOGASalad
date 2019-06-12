@@ -1,0 +1,53 @@
+.scroll-pane {
+    -fx-background: rgb(21, 21, 21);
+}
+
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: gray;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: darkgrey;
+}
+
+.increment-button:hover {
+    -fx-background-color: darkgrey;
+}
+
+.decrement-button:hover {
+    -fx-background-color: darkgrey;
+}
+
+/*.menu-bar .menu .context-menu {*/
+/*    -fx-background-color: #424242;*/
+/*    -fx-font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;*/
+/*    -fx-font-size: 10pt;*/
+/*    -fx-font-weight: lighter;*/
+/*    -fx-text-fill: white;*/
+/*    -fx-padding: 0 0 0 0;*/
+/*}*/
+
+.menu-bar {
+    -fx-padding: 0;
+}
+
+.menu .context-menu {
+    -fx-background-color: #424242;
+}
+
+.menu {
+    -fx-padding: 1 5 1 5;
+}
+
+.menu-item {
+    -fx-background-color: #424242;
+    -fx-padding: 1 5 1 5;
+}
+
+.menu-item:focused {
+    -fx-background-color: darkgray;
+}

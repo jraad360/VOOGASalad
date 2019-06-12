@@ -1,0 +1,10 @@
+#general{
+    -fx-background-image: url(MapBackground.jpg);
+    -fx-background-size: cover;
+}
+
+#middle{
+    -fx-border-style: solid;
+    -fx-border-width: 5px;
+    -fx-border-color: white;
+}

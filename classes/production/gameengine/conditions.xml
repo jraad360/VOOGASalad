@@ -1,0 +1,77 @@
+<conditionDefinitions>
+
+    <conditionDefinition>
+        <name>Closest</name>
+        <fields />
+    </conditionDefinition>
+
+    <conditionDefinition>
+        <name>DoOnceWithSelf</name>
+        <fields />
+    </conditionDefinition>
+
+    <conditionDefinition>
+        <name>Interval</name>
+        <fields>
+            <double>interval</double>
+        </fields>
+    </conditionDefinition>
+
+    <conditionDefinition>
+        <name>Range</name>
+        <fields>
+            <double>range</double>
+        </fields>
+    </conditionDefinition>
+
+    <conditionDefinition>
+        <name>PropertyEqualTo</name>
+        <fields>
+            <string>property</string>
+            <comparable>value</comparable>
+        </fields>
+    </conditionDefinition>
+
+    <conditionDefinition>
+        <name>PropertyGreaterThan</name>
+        <fields>
+            <string>property</string>
+            <comparable>value</comparable>
+        </fields>
+    </conditionDefinition>
+
+    <conditionDefinition>
+        <name>PropertyGreaterThanOrEqualTo</name>
+        <fields>
+            <string>property</string>
+            <comparable>value</comparable>
+        </fields>
+    </conditionDefinition>
+
+    <conditionDefinition>
+        <name>PropertyLessThanOrEqualTo</name>
+        <fields>
+            <string>property</string>
+            <comparable>value</comparable>
+        </fields>
+    </conditionDefinition>
+
+    <conditionDefinition>
+        <name>Collision</name>
+        <fields />
+    </conditionDefinition>
+
+    <conditionDefinition>
+        <name>IsNotColliding</name>
+        <fields />
+    </conditionDefinition>
+
+    <conditionDefinition>
+        <name>PropertyLessThanOrEqualTo</name>
+        <fields>
+            <string>property</string>
+            <comparable>value</comparable>
+        </fields>
+    </conditionDefinition>
+
+</conditionDefinitions>

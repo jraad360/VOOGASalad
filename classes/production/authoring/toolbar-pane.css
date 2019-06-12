@@ -1,0 +1,87 @@
+.menu-bar {
+    -fx-background-color: #424242;
+}
+
+.spinner {
+    -fx-background-color: transparent;
+}
+
+.combo-box {
+    -fx-background-color: gray;
+    -fx-pref-height: 20;
+}
+
+.combo-box {
+    -fx-prompt-text-fill: black;
+}
+
+.combo-box:hover {
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+
+.combo-box .list-view .list-cell {
+    -fx-font-size: 10pt;
+    -fx-pref-height: 30;
+}
+
+.combo-box .combo-box-popup .list-view, .combo-box .combo-box-popup .list-cell {
+    -fx-background-color: darkgray ;
+    -fx-text-fill: black ;
+}
+
+.combo-box .combo-box-popup .list-cell:hover {
+    -fx-text-fill: black ;
+    -fx-background-color: lightblue ;
+}
+
+.spinner .increment-arrow-button, .decrement-arrow-button {
+    -fx-border-style: solid;
+    -fx-border-width: 2.5px;
+    -fx-border-color: #424242;
+}
+
+.spinner .text-field{
+    -fx-pref-width: 80;
+    -fx-font-weight: bold;
+    -fx-font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    -fx-font-size: 10pt;
+    -fx-text-fill: black;
+}
+
+.tool-bar{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.button{
+    -fx-background-color: transparent;
+    -fx-text-fill: lightgrey;
+    -fx-font-size: 12pt;
+}
+
+.button:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.label {
+    -fx-font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    -fx-font-size: 10pt;
+    -fx-font-weight: lighter;
+    -fx-text-fill: white;
+}
+
+.menu .context-menu {
+    -fx-background-color: #424242;
+}
+
+.menu {
+    -fx-padding: 1 5 1 5;
+}
+
+.menu-item {
+    -fx-background-color: #424242;
+    -fx-padding: 1 5 1 5;
+}
+
+.menu-item:focused {
+    -fx-background-color: darkgray;
+}

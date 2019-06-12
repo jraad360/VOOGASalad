@@ -1,0 +1,98 @@
+.root {
+    -fx-padding: 30;
+    -fx-alignment: center;
+}
+
+.center-pane {
+    -fx-alignment: center;
+}
+
+.button {
+    -fx-alignment: center;
+    -fx-background-size: auto;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+}
+
+.attribute-pane {
+}
+
+.attribute-box {
+    -fx-background-image: url("themes/forest/panes/board4.png");
+    -fx-background-repeat: repeat;
+}
+
+.store-button {
+    -fx-graphic: url('themes/forest/buttons/store-button.png')
+}
+.store-item {
+    -fx-background-image: url('themes/forest/panes/window5.png');
+    -fx-padding: 25 20 20 20;
+    -fx-alignment: center;
+}
+
+.store-text {
+    -fx-fill: white;
+    -fx-alignment: center;
+    -fx-padding: 10;
+}
+.settings-button {
+    -fx-graphic: url('themes/forest/buttons/settings-button.png')
+}
+
+.health-bar {
+    -fx-image: url('themes/forest/health-bar/health-bar.png')
+}
+
+.settings-pane {
+    -fx-padding: 50;
+    -fx-background-image: url('themes/forest/panes/window1.png');
+    -fx-background-size: contain;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-alignment: center;
+}
+
+.home-button {
+    -fx-graphic: url('themes/forest/buttons/home-button.png')
+}
+
+.info-button {
+    -fx-graphic: url('themes/forest/buttons/info-button.png')
+}
+
+.open-button {
+    -fx-graphic: url('themes/forest/buttons/open-button.png')
+}
+
+.play-button {
+    -fx-graphic: url('themes/forest/buttons/play-button.png')
+}
+
+.restart-button {
+    -fx-graphic: url('themes/forest/buttons/restart-button.png')
+}
+
+.save-button {
+    -fx-graphic: url('themes/forest/buttons/save-button.png')
+}
+
+.item-container-background {
+    -fx-fill: BROWN;
+}
+
+.item-price-container-background {
+    -fx-fill: BROWN;
+}
+
+.item-price {
+    -fx-fill: WHITE;
+}
+
+
+
+.demo-agent {
+    -fx-scale-x: 4;
+    -fx-scale-y: 4;
+}

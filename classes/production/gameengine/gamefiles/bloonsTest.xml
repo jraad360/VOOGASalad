@@ -1,0 +1,156 @@
+<state.State>
+  <levels>
+    <engine.Level>
+      <levelState>
+        <placeableAgents/>
+        <agentsCurrent/>
+        <attributesCurrent/>
+        <gameOver>false</gameOver>
+        <pcs serialization="custom">
+          <java.beans.PropertyChangeSupport>
+            <default>
+              <source class="state.LevelState" reference="../../../.."/>
+              <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+            </default>
+            <null/>
+          </java.beans.PropertyChangeSupport>
+        </pcs>
+      </levelState>
+      <eventMaster>
+        <removeAgentListeners>
+          <java.util.function.Consumer resolves-to="serialized-lambda">
+            <capturingClass>engine.Level</capturingClass>
+            <functionalInterfaceClass>java/util/function/Consumer</functionalInterfaceClass>
+            <functionalInterfaceMethodName>accept</functionalInterfaceMethodName>
+            <functionalInterfaceMethodSignature>(Ljava/lang/Object;)V</functionalInterfaceMethodSignature>
+            <implClass>engine/Level</implClass>
+            <implMethodName>lambda$injectGameEventMaster$5384b112$1</implMethodName>
+            <implMethodSignature>(Lengine/event/events/RemoveAgentEvent;)V</implMethodSignature>
+            <implMethodKind>7</implMethodKind>
+            <instantiatedMethodType>(Lengine/event/events/RemoveAgentEvent;)V</instantiatedMethodType>
+            <capturedArgs>
+              <engine.Level reference="../../../../.."/>
+            </capturedArgs>
+          </java.util.function.Consumer>
+        </removeAgentListeners>
+        <addAgentListeners>
+          <java.util.function.Consumer resolves-to="serialized-lambda">
+            <capturingClass>engine.Level</capturingClass>
+            <functionalInterfaceClass>java/util/function/Consumer</functionalInterfaceClass>
+            <functionalInterfaceMethodName>accept</functionalInterfaceMethodName>
+            <functionalInterfaceMethodSignature>(Ljava/lang/Object;)V</functionalInterfaceMethodSignature>
+            <implClass>engine/Level</implClass>
+            <implMethodName>lambda$injectGameEventMaster$5384b112$2</implMethodName>
+            <implMethodSignature>(Lengine/event/events/AddAgentEvent;)V</implMethodSignature>
+            <implMethodKind>7</implMethodKind>
+            <instantiatedMethodType>(Lengine/event/events/AddAgentEvent;)V</instantiatedMethodType>
+            <capturedArgs>
+              <engine.Level reference="../../../../.."/>
+            </capturedArgs>
+          </java.util.function.Consumer>
+        </addAgentListeners>
+      </eventMaster>
+      <agentsToAdd/>
+      <agentsToRemove/>
+      <authoringAgentsPlaced>
+        <state.AgentReference>
+          <name>red</name>
+          <x>0.0</x>
+          <y>100.0</y>
+          <direction>0.0</direction>
+          <instanceProperties/>
+        </state.AgentReference>
+        <state.AgentReference>
+          <name>red</name>
+          <x>50.0</x>
+          <y>50.0</y>
+          <direction>0.0</direction>
+          <instanceProperties/>
+        </state.AgentReference>
+      </authoringAgentsPlaced>
+      <authoringPlaceableAgents/>
+      <masterDefinedAgents>
+        <state.agent.Agent>
+          <actionDecisions>
+            <state.actiondecision.ActionDecision>
+              <action class="state.action.movement.MoveOnPointPath">
+                <eventMaster reference="../../../../../../eventMaster"/>
+                <params>
+                  <entry>
+                    <string>speed</string>
+                    <double>10.0</double>
+                  </entry>
+                </params>
+                <name>MoveOnPointPath</name>
+                <speed>10.0</speed>
+                <baseAgent reference="../../../.."/>
+                <hasDoneFirstExecute>false</hasDoneFirstExecute>
+                <currPoint>0</currPoint>
+              </action>
+              <conditions>
+                <state.condition.DoOnceWithSelfCondition>
+                  <name>DoOnceWithSelf</name>
+                  <params/>
+                  <baseAgent reference="../../../../.."/>
+                </state.condition.DoOnceWithSelfCondition>
+              </conditions>
+            </state.actiondecision.ActionDecision>
+          </actionDecisions>
+          <playerAgent>
+            <id>0</id>
+            <x>0.0</x>
+            <y>0.0</y>
+            <imageURL>bloons/redBloon.png</imageURL>
+            <name>red</name>
+            <direction>180.0</direction>
+            <width>12</width>
+            <height>15</height>
+            <properties>
+              <state.Property>
+                <name>pathName</name>
+                <value class="string">bloonPath</value>
+              </state.Property>
+            </properties>
+            <pcs serialization="custom">
+              <java.beans.PropertyChangeSupport>
+                <default>
+                  <source class="state.agent.PlayerAgent" reference="../../../.."/>
+                  <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+                </default>
+                <null/>
+              </java.beans.PropertyChangeSupport>
+            </pcs>
+          </playerAgent>
+          <pcs serialization="custom">
+            <java.beans.PropertyChangeSupport>
+              <default>
+                <source class="state.agent.Agent" reference="../../../.."/>
+                <propertyChangeSupportSerializedDataVersion>2</propertyChangeSupportSerializedDataVersion>
+              </default>
+              <null/>
+            </java.beans.PropertyChangeSupport>
+          </pcs>
+        </state.agent.Agent>
+      </masterDefinedAgents>
+      <paths>
+        <entry>
+          <string>bloonPath</string>
+          <list>
+            <java.awt.geom.Point2D_-Double>
+              <x>0.0</x>
+              <y>0.0</y>
+            </java.awt.geom.Point2D_-Double>
+            <java.awt.geom.Point2D_-Double>
+              <x>200.0</x>
+              <y>0.0</y>
+            </java.awt.geom.Point2D_-Double>
+          </list>
+        </entry>
+      </paths>
+    </engine.Level>
+  </levels>
+  <currentLevel>0</currentLevel>
+  <currentObjectives/>
+  <gameOver>false</gameOver>
+  <definedAgents reference="../levels/engine.Level/masterDefinedAgents"/>
+</state.State>
